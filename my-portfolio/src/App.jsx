@@ -1,11 +1,10 @@
 import React from 'react';
 import Header from './components/Header';
 import Projects from './components/Projects';
-import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div style={{ fontFamily: 'Arial, sans-serif', textAlign: 'center', padding: '20px' }}>
       <Header />
       <Projects />
     </div>
