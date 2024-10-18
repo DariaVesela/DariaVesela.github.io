@@ -1,15 +1,14 @@
 import React from 'react';
-import Header from './components/Header';
+import Introduction from './components/Introduction';
 import Projects from './components/Projects';
 
 function App() {
-  return (
-    <div style={{ fontFamily: 'Arial, sans-serif', textAlign: 'center', padding: '20px' }}>
-      <Header />
-      
-      <Projects />
+  return (<div style={{flex: 1, display: 'flex', flexDirection: 'column', height:'100%'}}>
+    <Introduction style={{flex: 1}}/>
+    <Projects style={{flex: 1}}/>
     </div>
   );
 }
 
 export default App;
+

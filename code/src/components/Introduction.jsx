@@ -1,21 +1,17 @@
 import React from 'react';
 
-const Header = () => {
+const Introduction = (props) => {
   return (
-    <div style={outerContainerStyle}>
-      <div style={containerStyle}>
-        <div style={{ borderRadius: '50%', overflow: 'hidden', marginRight: '20px' }}>
+    <div style={{display:'flex',flexDirection:'row',...props.style}}>
+      
           {/* Placeholder for Profile Picture */}
-          <img src="https://via.placeholder.com/100" alt="Profile" style={{ width: '100px', height: '100px' }} />
-        </div>
-        <div style={boxStyle}>
+          <img src="https://via.placeholder.com/100" alt="Profile"/>
+        <div>
           <p>Hi! My name is Daria!</p>
           <p>I am a ...</p>
+       
+        <button> Book a Meeting</button>
         </div>
-      </div>
-      <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
-        <button style={buttonStyle}>Book a Meeting</button>
-      </div>
     </div>
   );
 };
@@ -57,4 +53,4 @@ const buttonStyle = {
   borderRadius: '5px',
 };
 
-export default Header;
+export default Introduction;

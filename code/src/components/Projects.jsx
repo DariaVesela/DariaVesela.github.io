@@ -1,20 +1,12 @@
 import React from 'react';
 
-const Projects = () => {
+const Projects = (props) => {
   return (
-    <div>
-      <h2>Projects</h2>
-      <div style={projectListStyle}>
-        <div style={projectStyle}>
-          <div style={projectImagePlaceholderStyle}></div>
-          <p>Title</p>
-        </div>
-        <div style={projectStyle}>
-          <div style={projectImagePlaceholderStyle}></div>
-          <p>Title</p>
-        </div>
-        <div style={projectStyle}>
-          <div style={projectImagePlaceholderStyle}></div>
+    <div style={props.style}>
+      <h2>Projects  </h2>
+      <div>
+        <div>
+          <div></div>
           <p>Title</p>
         </div>
       </div>

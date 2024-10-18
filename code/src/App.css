@@ -55,3 +55,32 @@
   background-color: #f0f0f0;
   margin-bottom: 10px;
 }
+
+.appContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: darkgreen;
+}
+
+.mainContainer{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.headerContainer{
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: lightgreen;
+}
+
