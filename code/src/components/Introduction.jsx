@@ -1,16 +1,19 @@
 import React from 'react';
+import redProfilePic from '../images/red_profile_pic.jpeg';
 
 const Introduction = (props) => {
   return (
-    <div style={{display:'flex',flexDirection:'row',...props.style}}>
+    <div style={{display:'flex',flexDirection:'row',...props.style, alignItems: 'center'}}>
       
           {/* Placeholder for Profile Picture */}
-          <img src="https://via.placeholder.com/100" alt="Profile"/>
+          <img src={redProfilePic} alt="Profile" style={{ width: '6cm', height: '6cm', marginRight: '2cm', borderRadius: '50%' }}/>
         <div>
           <p>Hi! My name is Daria!</p>
           <p>I am a ...</p>
-       
+        <div style={{ display: 'flex', gap: '10px' }}>
         <button> Book a Meeting</button>
+        <button> Download Resume</button>
+        </div>
         </div>
     </div>
   );
@@ -42,8 +45,12 @@ const boxStyle = {
 };
 
 const buttonStyle = {
+  display: 'flex',             // Use flex to ensure centered text
+  alignItems: 'center',         // Center text vertically
+  justifyContent: 'center',     // Center text horizontally
   height: '40px',
-  minWidth: '90px',
+  width: '180px',              // Fixed height for all buttons
+  minWidth: '140px',            // Fixed minimum width for uniform size
   padding: '10px 20px',
   fontSize: '16px',
   cursor: 'pointer',
