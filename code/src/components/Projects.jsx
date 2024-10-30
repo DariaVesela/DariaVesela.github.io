@@ -6,33 +6,29 @@ const Projects = (props) => {
       <h2>Projects  </h2>
       <div>
         <div>
-          <div></div>
-          <p>Title</p>
+          <div style={boxStyle}>
+          <p>texttexttext</p>
+        </div>
         </div>
       </div>
     </div>
   );
 };
 
-const projectListStyle = {
-  display: 'flex',
-  justifyContent: 'center',
-  gap: '20px',
-  marginTop: '20px',
-};
+/* first figure out how to control the ugly box, then play with sizing */
 
-const projectStyle = {
-  width: '150px',
-  border: '1px solid #ddd',
-  padding: '10px',
-  textAlign: 'center',
-};
-
-const projectImagePlaceholderStyle = {
-  width: '100%',
-  height: '100px',
-  backgroundColor: '#f0f0f0',
-  marginBottom: '10px',
+const boxStyle = {
+  display: 'flex', // Use flex to ensure centered text
+  flex: 1,
+  border: '2px solid #BDBDBD', // Light gray border around the box
+  height: 'auto', // Allows height to adjust based on content
+  minHeight: '4cm', // Ensures minimum height but is flexible beyond that
+  borderRadius: '10px', // Slightly rounded corners
+  padding: '5%', // Adjust padding to be more responsive
+  textAlign: 'center', // Centers the text inside the box
+  fontFamily: 'sans-serif', // Clean font family
+  boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.2)', // Optional: adds a shadow for depth
+  backgroundColor: 'white', // Sets the background color to white
 };
 
 export default Projects;
