@@ -3,14 +3,17 @@ import React from 'react';
 const Projects = (props) => {
   return (
     <div style={props.style}>
-      <h2>Projects  </h2>
-      <div>
-        <div>
+      
           <div style={boxStyle}>
-          <p>texttexttext</p>
-        </div>
-        </div>
-      </div>
+            <p>text text text</p>
+          </div>
+          <div style={boxStyle}>
+            <p>text text text</p>
+          </div>
+          <div style={boxStyle}>
+            <p>text text text</p>
+          </div>
+          
     </div>
   );
 };
