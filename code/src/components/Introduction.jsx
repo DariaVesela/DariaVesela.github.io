@@ -10,7 +10,7 @@ const Introduction = (props) => {
         <div style={boxStyle}>
           <p>Hi! My name is Daria!</p>
           <p>I am a ...</p>
-        <div style={{ display: 'flex', gap: '10px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px'}}>
         <button style={buttonStyle}> Book a Meeting</button>
         <button style={buttonStyle}> Download Resume</button>
         </div>
@@ -22,10 +22,11 @@ const Introduction = (props) => {
 
 const boxStyle = {
   border: '2px solid #BDBDBD', // Light gray border around the box
-  height: '4cm',
+  minHeight: '4cm', // Ensures minimum height but is flexible beyond that
+  height: 'auto',
   borderRadius: '10px', // Slightly rounded corners
   padding: '20px', // Adds space inside the box
-  maxWidth: '300px', // Optional: controls the width of the box
+  width: '100%', // Ensures the box takes up the full width available
   textAlign: 'center', // Centers the text inside the box
   fontFamily: 'sans-serif', // Clean font family
   boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.2)', // Optional: adds a shadow for depth
